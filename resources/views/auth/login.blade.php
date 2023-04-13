@@ -3,7 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: Arial, Helvetica, sans-serif;
+  width: 30%;
+  margin: 80px;
+}
 form {border: 3px solid #f1f1f1;}
 
 input[type=text], input[type=password] {
@@ -22,7 +25,7 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 30%;
 }
 
 button:hover {
@@ -73,7 +76,7 @@ span.psw {
 <form action="{{url('loginPost')}}" method="post">
     @csrf
   <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    <img src="/uploads/quarecit.jpg" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
