@@ -38,7 +38,7 @@
             <td>{{ $portfolio ->tags }}</td>
             <td><img src="/uploads/portfolio/{{ $portfolio->portfolio_image }}" width="80px"  height="70px"></td>                  
             <td>
-                <form action="{{ url('auth/portfolio/delete',$portfolio->id) }}" method="POST">
+                    <form action="{{ route('portfolio.destroy',$portfolio->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ url('auth/portfolio',$portfolio->id) }}">Show</a>
     
